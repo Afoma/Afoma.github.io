@@ -6,22 +6,10 @@ import styles from './index.module.css';
 
 const projects = [
   {
-    title: 'Demystifying Chainlink Automation v2.5',
+    title: 'Demystifying Chainlink VRF v2.5',
     description:
-      'A technical deep dive into Chainlink Automation, exploring its architecture, execution model, and implementation.',
-    link: '/docs/chainlink-vrf-v2-5/Introduction/',
-  },
-  {
-    title: 'Foundry Testing',
-    description:
-      'Exploring practical approaches to smart contract testing with Foundry, including unit, fuzz, and invariant testing.',
-    link: '/docs/foundry-testing/intro',
-  },
-  {
-    title: 'API Documentation',
-    description:
-      'Technical documentation covering API design, authentication, endpoints, and usage examples.',
-    link: '/docs/api-documentation/intro',
+      'A technical deep dive into Chainlink VRF v2.5, exploring its architecture, execution model, and implementation.',
+    link: '/docs/chainlink-vrf-v2-5/Introduction',
   },
 ];
 
