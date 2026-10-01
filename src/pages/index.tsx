@@ -11,6 +11,19 @@ const projects = [
       'A technical deep dive into Chainlink VRF v2.5, exploring its architecture, execution model, and implementation.',
     link: '/docs/chainlink-vrf-v2-5/Introduction',
   },
+    {
+    title: 'Demystifying Chainlink VRF v2.5',
+    description:
+      'A technical deep dive into Chainlink VRF v2.5, exploring its architecture, execution model, and implementation.',
+    link: '/docs/chainlink-vrf-v2-5/Introduction',
+  },
+
+    {
+    title: 'Demystifying Chainlink VRF v2.5',
+    description:
+      'A technical deep dive into Chainlink VRF v2.5, exploring its architecture, execution model, and implementation.',
+    link: '/docs/chainlink-vrf-v2-5/Introduction',
+  },
 ];
 
 function HomepageHeader() {
