@@ -1,30 +1,147 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Custom portfolio theme
+ * Palette:
+ * #660D33 - deep berry
+ * #B276B6 - mauve
+ * #A12A70 - berry pink
  */
 
-/* You can override the default Infima variables here. */
+/* Light mode */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Main accent */
+  --ifm-color-primary: #a12a70;
+  --ifm-color-primary-dark: #912565;
+  --ifm-color-primary-darker: #88225f;
+  --ifm-color-primary-darkest: #701c4e;
+  --ifm-color-primary-light: #b2387f;
+  --ifm-color-primary-lighter: #bd5590;
+  --ifm-color-primary-lightest: #d18ab3;
+
+  /* Links */
+  --ifm-link-color: #a12a70;
+  --ifm-link-hover-color: #660d33;
+
+  /* Buttons */
+  --ifm-button-background-color: #a12a70;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(161, 42, 112, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #d18ab3;
+  --ifm-color-primary-dark: #bd5590;
+  --ifm-color-primary-darker: #b2387f;
+  --ifm-color-primary-darkest: #a12a70;
+  --ifm-color-primary-light: #dba1c2;
+  --ifm-color-primary-lighter: #e5b8d1;
+  --ifm-color-primary-lightest: #efd0e0;
+
+  --ifm-link-color: #dba1c2;
+  --ifm-link-hover-color: #efd0e0;
+
+  --docusaurus-highlighted-code-line-bg: rgba(209, 138, 179, 0.15);
+}
+
+/* Solid buttons */
+.button--primary {
+  background-color: #a12a70;
+  border-color: #a12a70;
+  color: #fff;
+}
+
+.button--primary:hover {
+  background-color: #660d33;
+  border-color: #660d33;
+  color: #fff;
+}
+
+/* Light/outlined buttons */
+.button--secondary {
+  color: #a12a70;
+  border-color: #a12a70;
+}
+
+.button--secondary:hover {
+  background-color: #a12a70;
+  border-color: #a12a70;
+  color: #fff;
+}
+
+/* Documentation tags and topic labels */
+.tag {
+  color: #a12a70;
+  border-color: #a12a70;
+}
+
+.tag:hover {
+  background-color: #a12a70;
+  color: #fff;
+}
+
+/* Sidebar active item */
+.menu__link--active {
+  color: #a12a70;
+}
+
+/* Sidebar item hover */
+.menu__link:hover {
+  color: #660d33;
+}
+
+/* Mobile hamburger menu icon */
+.navbar__toggle {
+  color: #a12a70;
+}
+
+/* Hover and keyboard focus */
+.navbar__toggle:hover {
+  color: #660d33;
+}
+
+/* Keep the icon visible in dark mode */
+[data-theme='dark'] .navbar__toggle {
+  color: #d18ab3;
+}
+
+[data-theme='dark'] .navbar__toggle:hover {
+  color: #efd0e0;
+}
+
+/* Mobile sidebar close X */
+.navbar-sidebar__close {
+  color: #a12a70;
+  --ifm-color-emphasis-600: #a12a70;
+}
+
+/* X icon */
+.navbar-sidebar__close svg,
+.navbar-sidebar__close svg g,
+.navbar-sidebar__close svg path {
+  stroke: #a12a70 !important;
+}
+
+/* Hover */
+.navbar-sidebar__close:hover {
+  color: #660d33;
+  --ifm-color-emphasis-600: #660d33;
+}
+
+.navbar-sidebar__close:hover svg,
+.navbar-sidebar__close:hover svg g,
+.navbar-sidebar__close:hover svg path {
+  stroke: #660d33 !important;
+}
+
+/* Dark mode */
+[data-theme='dark'] .navbar-sidebar__close {
+  color: #d18ab3;
+  --ifm-color-emphasis-600: #d18ab3;
+}
+
+[data-theme='dark'] .navbar-sidebar__close svg,
+[data-theme='dark'] .navbar-sidebar__close svg g,
+[data-theme='dark'] .navbar-sidebar__close svg path {
+  stroke: #d18ab3 !important;
 }
